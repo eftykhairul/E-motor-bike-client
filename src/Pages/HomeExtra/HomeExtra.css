@@ -1,0 +1,93 @@
+/* bodysection */
+.bg-colour{
+    background-color: #264653;
+    ;
+}
+/* modalsection */
+.inpt{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/* buttonsection */
+.btn-button{
+    background-color: #E76F51;
+    padding: 10px;
+    border-radius: 5px;
+}
+/* headingcolour */
+.bike{
+    color: #E76F51;
+    /* margin-left: 90px;
+    margin-bottom: 60px; */
+}
+/* allignment */
+.happy{
+    text-align: center;
+    margin-top: 80px;
+    
+}
+/* grayscaling */
+.se-1 img{
+    filter: grayscale(100%);
+}
+/* Colours */
+.colour{
+    color: #E76F51;
+}
+/* fontawesome */
+.fa-star{
+    font-size: 20px;
+}
+.fa-star.filled{
+    color: #FFC014;
+}
+.fa-star.empty{
+    color: #aeaeae;
+}
+/* image sizing */
+.card-100 img{
+    width: 149px;
+    height: 149px;
+    margin: auto;
+    
+}
+.card-body{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    
+}
+.bank{
+    margin-top: 25px;
+}
+/* Fourth part */
+.faq-img img{
+    width: 500px;
+    height: 500px;
+}
+.new-head{
+    margin-top: 40px;
+}
+/* new_section */
+#cbr{
+    text-align: start;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: blueviolet;
+}
+#ex-motion{
+    text-align: end;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: rgb(46, 190, 142);
+}
+.nav-mar{
+    margin-right: 20px;
+    color: white;
+    
+}
+.round img{
+    border-radius: 50px;
+}

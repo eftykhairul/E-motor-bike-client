@@ -1,23 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route, Link } from "react-router-dom";
+import Home from './Pages/Home/Home';
+import About from './Pages/About/About';
+import Login from './Pages/Login/Login';
+import React from 'react'
+import SignUp from './Pages/Login/SignUp';
+import RequireAuth from './Pages/Login/RequireAuth';
+import Bikes from './Pages/Bikes/Bikes';
+import Appointment from './Pages/Appointment/Appointment';
+import Navigation from './Pages/Navigation/Navigation';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import Dashboard from './Pages/Dashboard/Dashboard';
+import MyAppointments from './Pages/Dashboard/MyAppointments';
+import MyReview from './Pages/Dashboard/MyReview';
+import MyOrders from './Pages/Dashboard/MyOrders';
+import Users from './Pages/Dashboard/Users';
+import RequireAdmin from './Pages/Login/RequireAdmin';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <h1 className="text-center text-4xl font-bold text-primary p-3">E-Motor Bike Sales and Servicing</h1>
+      <Navigation></Navigation>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/bikes" element={
+          <RequireAuth>
+            <Bikes></Bikes>
+          </RequireAuth>
+        } />
+        <Route path="/dashboard" element={
+          <RequireAuth>
+            <Dashboard></Dashboard>
+          </RequireAuth>
+        } >
+          <Route index element={<MyAppointments></MyAppointments>}></Route>
+          <Route path="review" element={<MyReview></MyReview>}></Route>
+          <Route path="orders" element={<MyOrders></MyOrders>}></Route>
+          <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
+        </Route>
+        <Route path="service" element={
+          <RequireAuth>
+            <Appointment/>
+          </RequireAuth>
+        } />
+        <Route exact path="/about" element={<About />} />
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signup" element={<SignUp />}></Route>
+      </Routes>
+      <ToastContainer />
+    
     </div>
   );
 }
