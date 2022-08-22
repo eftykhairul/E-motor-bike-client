@@ -5,7 +5,7 @@ const Bike = ({ bike,setTreatment }) => {
     const { name, price, images, description, role,slots } = bike;
 
     return (
-        <div class="card w-96 bg-base-100 shadow-xl justify-center">
+        <div class="card w-96 bg-base-100 shadow-xl justify-center mb-5">
             <figure><img src={images} alt='' /></figure>
             <div class="card-body">
                 <h2 class="card-title text-xl font-bold text-emerald-500 justify-center text-center">{name}</h2>

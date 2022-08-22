@@ -12,7 +12,7 @@ const Bikes = () => {
     },[])
     return (
         <div className='text-center my-10'>
-            <h1 className='text-4xl font-bold text-primary'>Our Products</h1>
+            <h1 className='text-4xl font-bold text-primary my-5'>Our Products</h1>
             <div className='grid sm:grid-cols-1 lg:grid-cols-3 sm:justify-center  lg:mx-40
             '>
             {

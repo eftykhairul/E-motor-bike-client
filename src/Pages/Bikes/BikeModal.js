@@ -34,6 +34,9 @@ const BikeModal = ({treatment,setTreatment}) => {
             if(data.success){
                 toast(`Bike name ${name} added for ${price} BDT`)
             }
+            else{
+                toast(`Bike name ${name} added for ${price} BDT`)
+            }
             setTreatment(null);
 
         })

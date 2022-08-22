@@ -3,6 +3,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import { useNavigate } from 'react-router-dom';
 import { signOut } from 'firebase/auth';
+import { Link} from 'react-router-dom';
 const MyAppointments = () => {
     const [appointments, setAppointments] = useState([]);
     const [user] = useAuthState(auth);
@@ -43,16 +44,25 @@ const MyAppointments = () => {
                             <th>Date</th>
                             <th>Time</th>
                             <th>Service</th>
+                            <th>Payment</th>
                         </tr>
                     </thead>
                     <tbody>
                         {
-                            appointments.map((a, index) => <tr>
+                            appointments.map((a, index) => <tr key={a._id}>
                                 <th>{index + 1}</th>
                                 <td>{a.customerName}</td>
                                 <td>{a.date}</td>
                                 <td>{a.slot}</td>
                                 <td>{a.booking}</td>
+                                <td>
+                                    {/* {(a.price && !a.paid) && <Link to={`/dashboard/payment/${a._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link> }
+                                    {(a.price && a.paid) && <span className=' text-success'>Paid</span> } */}
+
+                                    {a.payment ? 'Paid' :
+                                    <Link to={`/dashboard/payment/${a._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>
+                                    }
+                                </td>
                             </tr>)
                         }
 

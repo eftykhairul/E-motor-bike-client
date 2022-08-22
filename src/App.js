@@ -17,6 +17,9 @@ import MyReview from './Pages/Dashboard/MyReview';
 import MyOrders from './Pages/Dashboard/MyOrders';
 import Users from './Pages/Dashboard/Users';
 import RequireAdmin from './Pages/Login/RequireAdmin';
+import Payment from './Pages/Dashboard/Payment';
+import BikePayment from './Pages/Dashboard/BikePayment';
+import DeleteBike from './Pages/Dashboard/DeleteBike';
 
 function App() {
   return (
@@ -37,6 +40,9 @@ function App() {
         } >
           <Route index element={<MyAppointments></MyAppointments>}></Route>
           <Route path="review" element={<MyReview></MyReview>}></Route>
+          <Route path="payment/:id" element={<Payment></Payment>}></Route>
+          <Route path="bikePayment/:id" element={<BikePayment></BikePayment>}></Route>
+          <Route path="bikeBooking/:email" element={<DeleteBike></DeleteBike>}></Route>
           <Route path="orders" element={<MyOrders></MyOrders>}></Route>
           <Route path="users" element={<RequireAdmin><Users></Users></RequireAdmin>}></Route>
         </Route>
