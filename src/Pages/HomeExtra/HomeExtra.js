@@ -6,7 +6,7 @@ const HomeExtra = () => {
             <section className="container mt-5 mb-4">
                 <div className="d-flex justify-content-center align-items-center">
                     <div>
-                        <h1 className="font-bold text-2xl">Featured Bikes 2021</h1>
+                        <h1 className="font-bold text-2xl">Featured Bikes 2023</h1>
                         <p className="bike font-bold text-xl p-2 m-2">Best Bike Collection</p>
                     </div>
                 </div>
@@ -22,13 +22,13 @@ const HomeExtra = () => {
                     </div>
                 </div>
             </section>
-            <section className="conatiner mt-5">
+            <section className="conatiner mt-5 ">
                 <div className="happy fw-bold">
                     
                     <h1 className="fs-1">Happy <span className="colour"> Clients says</span></h1>
                         
                 </div>    
-                <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
                     <div className="col">
                     <div className="card w-96 bg-base-100 shadow-xl px-10 pt-10">
                     <figure class="px-10 pt-10 avatar">
@@ -67,8 +67,8 @@ const HomeExtra = () => {
                     </div>
                     <div className="col">
                     <div className="card w-96 bg-base-100 shadow-xl px-10 pt-10">
-                    <figure class="px-10 pt-10 avatar">
-                        <img src="https://raw.githubusercontent.com/eftykhairul/honda-cbr-bootstrap/main/images/user-3.jpg" alt="Shoes" class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2" />
+                    <figure class="px-14 pt-16 avatar">
+                        <img src="https://stylesatlife.com/wp-content/uploads/2020/12/Hairstyles-for-Round-Face-Women-27.jpg.webp" alt="Shoes" class="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2" />
                     </figure>
                         <div className="card-body">
 
@@ -199,7 +199,7 @@ const HomeExtra = () => {
             <section className="container mt-5 mb-4">
                 <div className="row">
                     <div className="col-lg-6">
-                        <h1  className="colour text-2xl mb-3 font-bold">Newly Introduced of 2021</h1>
+                        <h1  className="colour text-2xl mb-3 font-bold">Newly Introduced of 2023</h1>
                         <p className="text-warp">The 2021 Honda Gold Wing Tour is available in two variants, one with manual transmission, priced at ₹ 37.20 lakh (Ex-showroom), and the top-spec DCT with airbag variant, priced at ₹ 39.16 lakh (Ex-showroom). The manual transmission variant is available in a Pearl Glare White colour option, while the DCT variant is available in Gunmetal Black Metallic & Matt Morion Black colour option.</p>
                     </div>
                     <div className="col-lg-6">
